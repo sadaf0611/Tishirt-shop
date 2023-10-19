@@ -1,0 +1,30 @@
+.showcontainer{
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: white;
+}
+.showcontainer ul{
+    list-style: none;
+}
+.showcontainer ul li{
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+.line button{
+    margin-left: 5px;
+}
+/* .line h2{
+    border-bottom: 1px solid gray;
+} */
+.lName{
+    font-family:Verdana;
+    font-weight: 800;
+    font-size: 15px;
+}
