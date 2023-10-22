@@ -11,6 +11,7 @@
 .showcontainer ul li{
     color: black;
     padding: 5px;
+    display: block;
     border-bottom: 1px solid gray;
 }
 .line{
@@ -20,9 +21,6 @@
 .line button{
     margin-left: 5px;
 }
-/* .line h2{
-    border-bottom: 1px solid gray;
-} */
 .lName{
     font-family:Verdana;
     font-weight: 800;

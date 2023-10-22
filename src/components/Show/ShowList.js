@@ -1,28 +1,23 @@
 import React from 'react'
 import classes from './ShowList.module.css'
+import Item from './Item'
 const ShowList = (props) => {
+
+  const tshirtList=props.tshirts.map((t)=>(
+    <Item
+      key={t.id}
+      id={t.id}
+      name={t.name}
+      price={t.price}
+      desc={t.desc}
+      L={t.L}
+      M={t.M}
+      S={t.S}
+    />
+  ));
   return (
     <div className={classes.showcontainer}>
-      <ul>
-        {props.tshirts.map((t)=>(
-            <li key={t.id}>
-                <div className={classes.line}>
-                    <div>
-                        <h2>{t.name}</h2>
-
-                        <h5>₹{t.price}</h5>
-                        <label> {t.desc}</label>
-                         
-                    </div>
-                    <div>
-                        <button className="btn btn-dark">{t.L}</button>
-                        <button className="btn btn-dark">{t.M}</button>
-                        <button className="btn btn-dark">{t.S}</button>
-                    </div>
-                </div>
-            </li>
-        ))}
-      </ul>
+      <ul>{tshirtList}</ul>
     </div>
   )
 }
